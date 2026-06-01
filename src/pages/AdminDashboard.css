@@ -1,0 +1,220 @@
+.admin-dashboard {
+  padding: 2rem 0 4rem;
+  background: var(--color-cream);
+  min-height: calc(100vh - var(--nav-height));
+}
+
+.admin-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-header h1 {
+  font-size: 1.75rem;
+}
+
+.admin-header p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.admin-status {
+  padding: 0.75rem 1rem;
+  background: rgba(47, 93, 70, 0.1);
+  color: var(--color-leaf-green-dark);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-tab {
+  padding: 0.65rem 1.25rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.admin-tab.active {
+  background: var(--color-leaf-green);
+  border-color: var(--color-leaf-green);
+  color: var(--color-white);
+}
+
+.admin-products-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.admin-form-section,
+.admin-list-section,
+.admin-inquiries {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-form-section h2,
+.admin-list-section h2,
+.admin-inquiries h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.admin-form-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-product-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.admin-product-form label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.admin-product-form input,
+.admin-product-form select,
+.admin-product-form textarea {
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.admin-form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  background: var(--color-cream);
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-edit {
+  background: var(--color-leaf-green);
+  color: var(--color-white);
+}
+
+.btn-edit:hover {
+  background: var(--color-leaf-green-dark);
+}
+
+.btn-delete {
+  background: rgba(122, 32, 56, 0.1);
+  color: var(--color-apple-red);
+}
+
+.btn-delete:hover {
+  background: var(--color-apple-red);
+  color: var(--color-white);
+}
+
+.inquiries-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.inquiry-card {
+  padding: 1.25rem;
+  background: var(--color-cream);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.inquiry-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.inquiry-date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.inquiry-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.inquiry-message {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--color-border);
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

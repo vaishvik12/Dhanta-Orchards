@@ -1,0 +1,59 @@
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inquiry-product-label {
+  padding: 0.75rem 1rem;
+  background: var(--color-cream-dark);
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--color-apple-red);
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.inquiry-product-label strong {
+  color: var(--color-apple-red);
+}
+
+.inquiry-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.inquiry-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inquiry-form .form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-leaf-green-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.inquiry-form .form-group input,
+.inquiry-form .form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+}
+
+.inquiry-form .form-group input:focus,
+.inquiry-form .form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-leaf-green);
+  box-shadow: 0 0 0 3px rgba(47, 93, 70, 0.12);
+}
+
+@media (max-width: 600px) {
+  .inquiry-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}

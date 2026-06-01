@@ -1,0 +1,27 @@
+:root {
+  --color-apple-red: #7a2038;
+  --color-apple-red-dark: #5c1829;
+  --color-apple-red-light: #a32d4f;
+  --color-leaf-green: #2f5d46;
+  --color-leaf-green-light: #3d7a5c;
+  --color-leaf-green-dark: #1e3d2e;
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #ede6d6;
+  --color-brown: #6b4e3d;
+  --color-brown-light: #8b6f5c;
+  --color-text: #2c2419;
+  --color-text-muted: #5c5348;
+  --color-white: #ffffff;
+  --color-border: rgba(107, 78, 61, 0.15);
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+  --shadow-sm: 0 2px 8px rgba(44, 36, 25, 0.06);
+  --shadow-md: 0 8px 24px rgba(44, 36, 25, 0.1);
+  --shadow-lg: 0 16px 48px rgba(44, 36, 25, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --transition: 0.3s ease;
+  --max-width: 1200px;
+  --nav-height: 76px;
+}
