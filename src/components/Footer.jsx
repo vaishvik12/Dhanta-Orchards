@@ -30,10 +30,10 @@ function Footer() {
           <h4>Visit Us</h4>
           <p>Jubbal, Himachal Pradesh, India</p>
           <p>
-            <a href="mailto:info@dhantaorchards.com">info@dhantaorchards.com</a>
+            <a href="mailto:dhanta.orchards@gmail.com">dhanta.orchards@gmail.com</a>
           </p>
           <p>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+919876543210">+91 9805715742</a>
           </p>
         </div>
 

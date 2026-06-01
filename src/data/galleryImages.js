@@ -7,13 +7,13 @@ export const galleryImages = [
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1464226184884-fa80b87d0d8e?w=800&q=80',
+    src: 'https://plus.unsplash.com/premium_photo-1779282891755-d11d8c7c427f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8VGVycmFjZWQlMjBoaWxsc2lkZSUyMG9yY2hhcmRzfGVufDB8fDB8fHww',
     alt: 'Terraced hillside orchards',
     caption: 'Terraced orchards overlooking Jubbal valley',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1595878848298-96a802248f98?w=800&q=80',
+    src: 'https://images.unsplash.com/photo-1634145981580-ff21cf6ae269?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFwcGxlJTIwSGFydmVzdCUyMHNlYXNvbiUyMGluJTIwdGhlJTIwaGlsbHN8ZW58MHx8MHx8fDA%3D',
     alt: 'Harvest season in the hills',
     caption: 'Harvest season in the Himalayan foothills',
   },
@@ -25,13 +25,13 @@ export const galleryImages = [
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1514750153120-b4e9ffd6b4b0?w=800&q=80',
+    src: 'https://images.unsplash.com/photo-1597829099268-2b87dffb9708?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVhciUyMG9uJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D',
     alt: 'Fresh pears on the tree',
     caption: 'Juicy pears from our hillside trees',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1628836963010-39d43b9670e4?w=800&q=80',
+    src: 'https://plus.unsplash.com/premium_photo-1675727579804-3d0f9ded5922?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVhY2hlcyUyMGluJTIwc3VubGlnaHR8ZW58MHx8MHx8fDA%3D',
     alt: 'Golden peaches in sunlight',
     caption: 'Golden peaches kissed by mountain sun',
   },
@@ -49,7 +49,7 @@ export const galleryImages = [
   },
   {
     id: 9,
-    src: 'https://images.unsplash.com/photo-1563291074-1bf9f1b87b5e?w=800&q=80',
+    src: 'https://plus.unsplash.com/premium_photo-1675727579804-3d0f9ded5922?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVhY2hlcyUyMGluJTIwc3VubGlnaHR8ZW58MHx8MHx8fDA%3D',
     alt: 'Fruit crates after harvest',
     caption: 'Fresh harvest ready for market',
   },

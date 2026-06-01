@@ -34,7 +34,7 @@ function Contact() {
                 <div>
                   <h4>Email</h4>
                   <p>
-                    <a href="mailto:info@dhantaorchards.com">info@dhantaorchards.com</a>
+                    <a href="mailto:dhanta.orchards@gmail.com">dhanta.orchards@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ function Contact() {
                 <div>
                   <h4>Phone</h4>
                   <p>
-                    <a href="tel:+919876543210">+91 98765 43210</a>
+                    <a href="tel:+919876543210">+91 9805715742</a>
                   </p>
                 </div>
               </div>

@@ -38,7 +38,7 @@ export const fallbackProducts = [
     stock: 300,
     size: 'Large',
     weight: '180-250g',
-    image: 'https://images.unsplash.com/photo-1514750153120-b4e9ffd6b4b0?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1665854818426-6197b7e80749?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGVhcnxlbnwwfHwwfHx8MA%3D%3D',
     season: 'August – October',
   },
   {
@@ -52,7 +52,7 @@ export const fallbackProducts = [
     stock: 250,
     size: 'Medium',
     weight: '120-160g',
-    image: 'https://images.unsplash.com/photo-1628836963010-39d43b9670e4?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1532704868953-d85f24176d73?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVhY2h8ZW58MHx8MHx8fDA%3D',
     season: 'July – September',
   },
   {
@@ -73,14 +73,28 @@ export const fallbackProducts = [
     id: 6,
     name: 'White Peach',
     category: 'Peaches',
-    variety: 'White Lady',
+    variety: 'White Peach',
     description:
       'Delicate white-fleshed peaches with floral notes. A rare treat from our orchard terraces.',
     price: 240,
     stock: 150,
     size: 'Medium',
     weight: '130-170g',
-    image: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80',
+    image: 'https://plus.unsplash.com/premium_photo-1692809723050-1b66ba686b4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2hpdGUlMjBwZWFjaHxlbnwwfHwwfHx8MA%3D%3D',
+    season: 'July – August',
+  },
+    {
+    id: 7,
+    name: 'Granny Smith Apple',
+    category: 'Apples',
+    variety: 'Granny Smith',
+    description:
+      'Crisp, tart, and refreshingly juicy - our Granny Smith apples are grown in the cool hills of Shimla.',
+    price: 140,
+    stock: 100,
+    size: 'Medium',
+    weight: '130-170g',
+    image: 'https://images.unsplash.com/photo-1719024651951-614f7c51bc7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R3Jhbm55JTIwU21pdGh8ZW58MHx8MHx8fDA%3D',
     season: 'July – August',
   },
 ];
