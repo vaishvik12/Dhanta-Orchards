@@ -55,7 +55,7 @@ function Home() {
         <div className="container intro-grid">
           <div className="intro-image">
             <img
-              src="https://images.unsplash.com/photo-1464226184884-fa80b87d0d8e?w=800&q=80"
+              src="https://images.unsplash.com/photo-1514735555661-d3278da9d5ca?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Himalayan orchard terraces in Jubbal"
             />
           </div>

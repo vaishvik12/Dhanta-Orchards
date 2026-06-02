@@ -73,7 +73,7 @@ function Contact() {
           <div className="map-embed">
             <iframe
               title="Dhanta Orchards location in Jubbal, Himachal Pradesh"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.0!2d77.65!3d31.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDA3JzEyLjAiTiA3N8KwMzknMDAuMCJF!5e0!3m2!1sen!2sin!4v1"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.4976257268157!2d77.70223176674259!3d31.113821565111305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905f7006203b8f9%3A0x407a7275fcffb183!2sDhar%20%2Cjubbal!5e0!3m2!1sen!2sus!4v1780401447971!5m2!1sen!2sus" 
               width="100%"
               height="400"
               style={{ border: 0 }}

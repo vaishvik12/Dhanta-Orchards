@@ -33,7 +33,7 @@ function About() {
           </div>
           <div className="about-intro-image">
             <img
-              src="https://images.unsplash.com/photo-1595878848298-96a802248f98?w=800&q=80"
+              src="https://images.stockcake.com/public/d/8/2/d82e710e-4b86-4629-8c3a-f22870912d90_large/harvesting-fresh-apples-stockcake.jpg"
               alt="Family working in Himalayan orchard"
             />
           </div>
@@ -48,24 +48,23 @@ function About() {
               <span className="legacy-year">1920s</span>
               <h3>The Beginning</h3>
               <p>
-                Our ancestors planted the first apple trees on terraced hillsides in Jubbal,
-                establishing roots that would span over a hundred years.
+                More than a century ago, when commercial apple cultivation was still in its infancy in the hills of Jubbal, our forefathers recognized the region's potential and planted the first roots of what would become Dhanta Orchards. Starting with a small plot of land and guided by determination, patience, and a deep connection to the mountains, they nurtured their orchards through changing seasons and generations. Their pioneering spirit helped establish apple farming in the area, laying the foundation for a thriving family enterprise that continues to flourish today.
+
               </p>
             </div>
             <div className="legacy-item">
               <span className="legacy-year">1960s</span>
               <h3>Expansion</h3>
               <p>
-                The orchard grew to include pears and peaches, diversifying our harvest
-                while maintaining traditional growing methods.
+                Our father, Late Shri Krishan Lal Dhanta, and our mother, Smt. Sumitra Dhanta, proudly carried forward the farming traditions passed down by their forefathers, dedicating their lives to nurturing and expanding the family orchards. Under their stewardship, the orchard grew beyond apples to include pears and peaches, enriching the harvest while preserving the traditional cultivation methods and deep respect for the land that had guided the family for generations. Their hard work, vision, and commitment laid the foundation upon which we continue to build today.
               </p>
             </div>
             <div className="legacy-item">
               <span className="legacy-year">Today</span>
               <h3>Pankaj &amp; Manjeet Dhanta</h3>
               <p>
-                As stewards of this land, we blend time-honoured practices with careful
-                modern stewardship — always putting quality and the land first.
+                Pankaj and Manjeet remain deeply grateful for the values instilled in them by their parents. From an early age, they witnessed the dedication, resilience, and hard work that Krishan Lal and Sumitra Dhanta poured into both their family and their orchards. Beyond teaching them the art of fruit cultivation, their parents taught them the importance of integrity, humility, respect for nature, and the value of caring for others. The love, guidance, and life lessons they received continue to inspire every decision they make, both in the orchards and in life.
+
               </p>
             </div>
           </div>
@@ -107,21 +106,23 @@ function About() {
       <section className="section about-owners">
         <div className="container owners-grid">
           <div className="owner-card">
-            <div className="owner-avatar">PD</div>
+            <div className="owner-avatar">
+                <img src="Pankaj.jpg" alt="Pankaj Dhanta" />
+            </div>
             <h3>Pankaj Dhanta</h3>
             <p className="owner-role">Co-Owner &amp; Orchard Steward</p>
             <p>
-              With decades of experience in Himalayan horticulture, Pankaj oversees
-              cultivation and harvest across our terraces.
+           A seasoned horticulture expert and senior horticulture officer, Pankaj is widely recognized for his contributions to fruit cultivation in Himachal Pradesh. Through years of field experience, agricultural camps, and farmer advisory work, he continues to promote excellence in Himalayan horticulture while leading operations across our orchards.
             </p>
           </div>
           <div className="owner-card">
-            <div className="owner-avatar">MD</div>
+            <div className="owner-avatar">
+              <img src="Manjeet.jpg" alt="Manjeet Dhanta" />
+            </div>
             <h3>Manjeet Dhanta</h3>
             <p className="owner-role">Co-Owner &amp; Quality Director</p>
             <p>
-              Manjeet ensures every shipment meets our family standards — from grading
-              and packing to customer relationships.
+              Drawing on the leadership and discipline gained through his service as an Army Officer, Manjeet manages distribution and customer relationships for our orchards. His commitment to excellence helps ensure that every customer experiences the quality and integrity that have been at the heart of our family business for generations.
             </p>
           </div>
         </div>

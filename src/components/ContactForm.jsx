@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import api from '../api/client';
+import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 
 const initialForm = {
@@ -17,28 +17,64 @@ function ContactForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     setSubmitting(true);
     setStatus({ type: '', message: '' });
 
     try {
-      await api.post('/contact', form);
-      setStatus({
-        type: 'success',
-        message: 'Thank you! Your message has been sent. We will respond soon.',
-      });
-      setForm(initialForm);
-    } catch {
+      // Email to Dhanta Orchards
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          subject: form.subject,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      // Auto reply to customer
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          subject: form.subject,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
       setStatus({
         type: 'success',
         message:
-          'Thank you for reaching out! We have received your message and will get back to you shortly.',
+          'Thank you! Your message has been sent. We will respond soon.',
       });
+
       setForm(initialForm);
+      
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+
+      setStatus({
+        type: 'error',
+        message:
+          'Sorry, something went wrong. Please try again later.',
+      });
     } finally {
       setSubmitting(false);
     }
@@ -59,6 +95,7 @@ function ContactForm() {
             placeholder="Your name"
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="contact-email">Email</label>
           <input
@@ -85,6 +122,7 @@ function ContactForm() {
             placeholder="+91 XXXXX XXXXX"
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="contact-subject">Subject</label>
           <input
@@ -101,6 +139,7 @@ function ContactForm() {
 
       <div className="form-group">
         <label htmlFor="contact-message">Message</label>
+
         <textarea
           id="contact-message"
           name="message"
@@ -113,10 +152,16 @@ function ContactForm() {
       </div>
 
       {status.message && (
-        <p className={`form-status ${status.type}`}>{status.message}</p>
+        <p className={`form-status ${status.type}`}>
+          {status.message}
+        </p>
       )}
 
-      <button type="submit" className="btn btn-primary" disabled={submitting}>
+      <button
+        type="submit"
+        className="btn btn-primary"
+        disabled={submitting}
+      >
         {submitting ? 'Sending...' : 'Send Message'}
       </button>
     </form>

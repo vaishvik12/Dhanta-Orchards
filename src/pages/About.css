@@ -151,15 +151,15 @@
   width: 80px;
   height: 80px;
   margin: 0 auto 1rem;
-  background: var(--color-leaf-green);
-  color: var(--color-white);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
+  overflow: hidden;
+}
+
+.owner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .owner-card h3 {
