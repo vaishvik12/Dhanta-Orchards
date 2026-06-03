@@ -6,7 +6,7 @@ import api from '../api/client';
 import { fallbackProducts } from '../data/fallbackProducts';
 import './Products.css';
 
-const CATEGORIES = ['All', 'Apples', 'Pears', 'Peaches'];
+const CATEGORIES = ['All', 'Apples', 'Pears', 'Peaches','Rootstocks'];
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -62,8 +62,8 @@ function Products() {
   return (
     <div className="products-page">
       <Hero
-        title="Our Fruits"
-        subtitle="Premium apples, pears, and peaches from the orchards of Jubbal."
+        title="Our Products"
+        subtitle="Premium apples, pears, peaches and rootstocks from the orchards of Jubbal."
         showCta={false}
         compact
       />

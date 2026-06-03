@@ -1,11 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './GalleryGrid.css';
 
 function GalleryGrid({ images }) {
   const [lightboxIndex, setLightboxIndex] = useState(null);
-
   const openLightbox = (index) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
+
+  useEffect(() => {
+    if (lightboxIndex !== null) {
+      document.body.classList.add('lightbox-open');
+    } else {
+      document.body.classList.remove('lightbox-open');
+    }
+
+    return () => {
+      document.body.classList.remove('lightbox-open');
+    };
+  }, [lightboxIndex]);
 
   const goPrev = (e) => {
     e.stopPropagation();

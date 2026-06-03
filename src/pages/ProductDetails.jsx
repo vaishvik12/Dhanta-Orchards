@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import InquiryForm from '../components/InquiryForm';
-import api from '../api/client';
+// import api from '../api/client';
 import { fallbackProducts } from '../data/fallbackProducts';
 import './ProductDetails.css';
 
@@ -12,24 +12,38 @@ function ProductDetails() {
   const [error, setError] = useState('');
   const [showInquiry, setShowInquiry] = useState(false);
 
+  // useEffect(() => {
+  //   const fetchProduct = async () => {
+  //     try {
+  //       const { data } = await api.get(`/products/${id}`);
+  //       setProduct(data);
+  //     } catch {
+  //       const found = fallbackProducts.find((p) => p.id === Number(id));
+  //       if (found) {
+  //         setProduct(found);
+  //       } else {
+  //         setError('Product not found.');
+  //       }
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  //   fetchProduct();
+  // }, [id]);
+
   useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const { data } = await api.get(`/products/${id}`);
-        setProduct(data);
-      } catch {
-        const found = fallbackProducts.find((p) => p.id === Number(id));
-        if (found) {
-          setProduct(found);
-        } else {
-          setError('Product not found.');
-        }
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProduct();
-  }, [id]);
+  const found = fallbackProducts.find(
+    (p) => p.id === Number(id)
+  );
+
+  if (found) {
+    setProduct(found);
+  } else {
+    setError('Product not found.');
+  }
+
+  setLoading(false);
+}, [id]);
 
   if (loading) {
     return <p className="loading-state container">Loading product...</p>;
@@ -117,6 +131,7 @@ function ProductDetails() {
             <InquiryForm
               productId={product.id}
               productName={product.name}
+              productCategory={product.category}
               onSuccess={() => setShowInquiry(false)}
             />
           </div>

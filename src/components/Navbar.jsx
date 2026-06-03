@@ -54,7 +54,7 @@ function Navbar() {
             </NavLink>
           ))}
           <Link to="/products" className="nav-cta btn btn-primary" onClick={closeMenu}>
-            Shop Fruits
+            Shop From Us
           </Link>
         </nav>
       </div>

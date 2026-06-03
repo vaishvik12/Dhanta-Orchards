@@ -55,7 +55,7 @@ function Home() {
         <div className="container intro-grid">
           <div className="intro-image">
             <img
-              src="https://images.unsplash.com/photo-1514735555661-d3278da9d5ca?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="Images/Orchard.jpg"
               alt="Himalayan orchard terraces in Jubbal"
             />
           </div>
@@ -63,28 +63,29 @@ function Home() {
             <span className="intro-label">Our Orchard</span>
             <h2>A Century of Fruit in the Himalayas</h2>
             <p>
-              Nestled in the misty hills of Jubbal, Himachal Pradesh, Dhanta Orchards has been
-              cultivating premium fruits for over 100 years. Pankaj and Manjeet Dhanta continue
-              the legacy of their ancestors — growing apples, pears, and peaches with patience,
-              care, and respect for the land.
+              Nestled in the misty hills of Jubbal, Himachal Pradesh, Dhanta Orchards has been cultivating premium fruits for over a century. Today, Pankaj and Manjeet Dhanta proudly continue the legacy of generations before them, nurturing apples, pears, peaches, persimmons, and high quality rootstocks with patience, care, and deep respect for the land.
             </p>
             <p>
-              Our orchards benefit from cool mountain air, pure spring water, and rich soil —
-              creating fruits of exceptional flavour and quality that cannot be replicated
-              elsewhere.
+              Blessed with cool mountain air, pure spring water, and fertile Himalayan soil, our orchards produce fruits renowned for their exceptional flavour, crisp texture, and natural sweetness. Combining traditional orcharding practices with modern horticultural expertise, we remain committed to sustainable cultivation, careful stewardship of our environment, and the highest standards of quality.
+
             </p>
+            <p>
+              Beyond growing fruit, we cultivate trust. From selecting premium rootstocks and managing healthy orchards to carefully grading, packing, and delivering our harvest, every step reflects our family's dedication to excellence. For more than 100 years, Dhanta Orchards has been rooted in the values of hard work, integrity, and a passion for bringing the finest produce from the Himalayas to customers across India.
+            </p>
+            <p>
+              This version feels more premium, tells the story of the orchard, highlights Pankaj's horticultural expertise and the rootstock business, and fits well in an "Our Orchard" section.</p>
             <Link to="/about" className="btn btn-secondary">
               Read Our Story
             </Link>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
 
       <section className="section cta-section">
         <div className="container cta-banner">
           <h2>Experience Himalayan Freshness</h2>
           <p>
-            Whether you are a wholesaler, retailer, or fruit lover — we welcome your inquiry.
+            Whether you are a wholesaler, retailer, or fruit lover, we welcome your inquiry.
             Taste the difference of truly orchard-fresh fruit.
           </p>
           <div className="cta-buttons">
@@ -97,7 +98,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   );
 }
 

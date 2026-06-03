@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import api from '../api/client';
+// import api from '../api/client';
 import './InquiryForm.css';
 
 const initialForm = {
@@ -12,13 +12,16 @@ const initialForm = {
   product_id: '',
 };
 
-function InquiryForm({ productId, productName, onSuccess }) {
+function InquiryForm({ productId, productName, productCategory,onSuccess }) {
   const [form, setForm] = useState({
     ...initialForm,
     product_id: productId || '',
   });
   const [status, setStatus] = useState({ type: '', message: '' });
   const [submitting, setSubmitting] = useState(false);
+
+  const isRootStock = 
+  productCategory?.toLowerCase() === 'rootstocks';
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,27 +33,83 @@ function InquiryForm({ productId, productName, onSuccess }) {
     setSubmitting(true);
     setStatus({ type: '', message: '' });
 
+    //   try {
+    //     await api.post('/inquiry', {
+    //       ...form,
+    //       product_id: form.product_id ? Number(form.product_id) : null,
+    //       quantity: form.quantity ? Number(form.quantity) : null,
+    //     });
+    //     setStatus({
+    //       type: 'success',
+    //       message: 'Your inquiry has been submitted! We will contact you soon.',
+    //     });
+    //     setForm({ ...initialForm, product_id: productId || '' });
+    //     if (onSuccess) onSuccess();
+    //   } catch (err) {
+    //     const msg =
+    //       err.response?.data?.message ||
+    //       'Unable to submit inquiry. Please try again or call us directly.';
+    //     setStatus({ type: 'error', message: msg });
+    //   } finally {
+    //     setSubmitting(false);
+    //   }
     try {
-      await api.post('/inquiry', {
-        ...form,
-        product_id: form.product_id ? Number(form.product_id) : null,
-        quantity: form.quantity ? Number(form.quantity) : null,
-      });
+      const response = await fetch(
+        'https://api.web3forms.com/submit',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+
+            subject: `Product Inquiry - ${productName || 'General Inquiry'}`,
+
+            customer_name: form.customer_name,
+            email: form.email,
+            phone: form.phone,
+            city: form.city,
+            quantity: form.quantity,
+            message: form.message,
+            product_name: productName || 'General Inquiry',
+          }),
+        }
+      );
+
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({
+          type: 'success',
+          message:
+            'Your inquiry has been submitted! We will contact you soon.',
+        });
+
+        setForm({
+          ...initialForm,
+          product_id: productId || '',
+        });
+
+        setTimeout(() => {
+          if (onSuccess) onSuccess();
+        }, 2000);
+      } else {
+        throw new Error(result.message);
+      }
+    } catch (error) {
+      console.error(error);
+
       setStatus({
-        type: 'success',
-        message: 'Your inquiry has been submitted! We will contact you soon.',
+        type: 'error',
+        message:
+          'Unable to submit inquiry. Please try again later.',
       });
-      setForm({ ...initialForm, product_id: productId || '' });
-      if (onSuccess) onSuccess();
-    } catch (err) {
-      const msg =
-        err.response?.data?.message ||
-        'Unable to submit inquiry. Please try again or call us directly.';
-      setStatus({ type: 'error', message: msg });
-    } finally {
-      setSubmitting(false);
     }
   };
+
 
   return (
     <form className="inquiry-form" onSubmit={handleSubmit}>
@@ -115,7 +174,7 @@ function InquiryForm({ productId, productName, onSuccess }) {
       </div>
 
       <div className="form-group">
-        <label htmlFor="inquiry-quantity">Quantity (kg)</label>
+        <label htmlFor="inquiry-quantity">{isRootStock ? "Number of Rootstocks" : "Quantity (KG)"}</label>
         <input
           id="inquiry-quantity"
           type="number"
@@ -153,5 +212,6 @@ function InquiryForm({ productId, productName, onSuccess }) {
     </form>
   );
 }
+
 
 export default InquiryForm;

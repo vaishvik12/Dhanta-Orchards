@@ -33,7 +33,7 @@ function About() {
           </div>
           <div className="about-intro-image">
             <img
-              src="https://images.stockcake.com/public/d/8/2/d82e710e-4b86-4629-8c3a-f22870912d90_large/harvesting-fresh-apples-stockcake.jpg"
+              src="Images/Rooted-in-himalyas.jpg"
               alt="Family working in Himalayan orchard"
             />
           </div>
@@ -107,7 +107,7 @@ function About() {
         <div className="container owners-grid">
           <div className="owner-card">
             <div className="owner-avatar">
-                <img src="Pankaj.jpg" alt="Pankaj Dhanta" />
+                <img src="Images/Pankaj.jpg" alt="Pankaj Dhanta" />
             </div>
             <h3>Pankaj Dhanta</h3>
             <p className="owner-role">Co-Owner &amp; Orchard Steward</p>
@@ -117,7 +117,7 @@ function About() {
           </div>
           <div className="owner-card">
             <div className="owner-avatar">
-              <img src="Manjeet.jpg" alt="Manjeet Dhanta" />
+              <img src="Images/Manjeet.jpg" alt="Manjeet Dhanta" />
             </div>
             <h3>Manjeet Dhanta</h3>
             <p className="owner-role">Co-Owner &amp; Quality Director</p>

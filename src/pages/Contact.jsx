@@ -18,7 +18,7 @@ function Contact() {
             <h2>Get in Touch</h2>
             <p>
               Whether you are interested in wholesale orders, visiting our orchards, or
-              simply learning more about our fruits — we welcome your message.
+              simply learning more about our fruits, we welcome your message.
             </p>
 
             <div className="contact-details">

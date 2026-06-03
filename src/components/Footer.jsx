@@ -33,7 +33,8 @@ function Footer() {
             <a href="mailto:dhanta.orchards@gmail.com">dhanta.orchards@gmail.com</a>
           </p>
           <p>
-            <a href="tel:+919876543210">+91 9805715742</a>
+            <a href="tel:+919876543210">Pankaj: +91 9805715742</a><br/>
+            <a href="tel:+919928086865">Manjeet: +91 9928086865</a>
           </p>
         </div>
 
@@ -43,6 +44,8 @@ function Footer() {
             <li>Apples</li>
             <li>Pears</li>
             <li>Peaches</li>
+            <li>Rootstocks</li>
+            <li>Persimmons</li>
           </ul>
         </div>
       </div>
