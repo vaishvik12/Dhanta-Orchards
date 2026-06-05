@@ -1,0 +1,163 @@
+.currently-in-season {
+  background: linear-gradient(
+    180deg,
+    var(--color-cream) 0%,
+    rgba(237, 230, 214, 0.6) 50%,
+    var(--color-white) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.currently-in-season::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(47, 93, 70, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.season-header {
+  position: relative;
+  z-index: 1;
+}
+
+.season-eyebrow {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-leaf-green);
+  margin-bottom: 0.5rem;
+}
+
+.season-month-label {
+  margin-bottom: 1.5rem !important;
+  font-weight: 500;
+  color: var(--color-apple-red);
+}
+
+.season-panel {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.season-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.harvesting-list {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.season-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-cream);
+  border: 1px solid transparent;
+  transition:
+    transform var(--transition-smooth),
+    border-color var(--transition-smooth),
+    box-shadow var(--transition-smooth),
+    background var(--transition-smooth);
+}
+
+.season-item:hover {
+  transform: translateX(4px);
+  border-color: rgba(47, 93, 70, 0.25);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-white);
+}
+
+.season-item.upcoming {
+  background: rgba(245, 240, 232, 0.6);
+}
+
+.season-emoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.season-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.season-item-text strong {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-leaf-green-dark);
+  font-weight: 600;
+}
+
+.season-availability {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.harvesting-list .season-availability {
+  color: var(--color-leaf-green);
+  font-weight: 600;
+}
+
+.season-upcoming h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-brown);
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.season-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 1rem 0;
+  line-height: 1.6;
+}
+
+.season-empty.subtle {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.season-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 560px) {
+  .season-panel {
+    padding: 1.25rem;
+  }
+
+  .season-actions .btn {
+    width: 100%;
+  }
+}

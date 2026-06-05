@@ -19,7 +19,25 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-cream);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(47, 93, 70, 0.06), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(122, 32, 56, 0.04), transparent);
   -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-content > * {
+  animation: fadeInUp 0.6s ease both;
 }
 
 img {
@@ -90,7 +108,12 @@ h4 {
   border-radius: var(--radius-sm);
   font-weight: 600;
   cursor: pointer;
-  transition: var(--transition);
+  transition:
+    background var(--transition-smooth),
+    color var(--transition-smooth),
+    transform var(--transition-smooth),
+    box-shadow var(--transition-smooth),
+    border-color var(--transition-smooth);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-size: 0.85rem;

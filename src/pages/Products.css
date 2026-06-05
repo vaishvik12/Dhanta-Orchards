@@ -78,6 +78,17 @@
   color: var(--color-white);
 }
 
+.filter-hint {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  background: rgba(47, 93, 70, 0.08);
+  border-left: 3px solid var(--color-leaf-green);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
 .results-count {
   font-size: 0.9rem;
   color: var(--color-text-muted);

@@ -5,13 +5,10 @@
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(30, 61, 46, 0.75) 0%,
-      rgba(122, 32, 56, 0.55) 100%
-    ),
-    url('https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=1920&q=80')
-      center / cover no-repeat;
+      rgba(122, 32, 56, 0.55) 100%),
+    url('/Dwarkadhish-Orchards/Images/Orchard.jpeg') center / cover no-repeat;
   color: var(--color-white);
   text-align: center;
   margin-top: calc(-1 * var(--nav-height));
@@ -25,11 +22,9 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse at center,
-    transparent 0%,
-    rgba(30, 61, 46, 0.3) 100%
-  );
+  background: radial-gradient(ellipse at center,
+      transparent 0%,
+      rgba(30, 61, 46, 0.3) 100%);
   pointer-events: none;
 }
 
@@ -109,11 +104,13 @@
 }
 
 @keyframes scrollBounce {
+
   0%,
   100% {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+
   50% {
     opacity: 0.3;
     transform: translateX(-50%) translateY(10px);

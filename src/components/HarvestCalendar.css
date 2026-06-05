@@ -1,0 +1,114 @@
+.harvest-calendar {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.calendar-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.calendar-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 0.5rem 0.35rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.calendar-product-col {
+  text-align: left !important;
+  min-width: 140px;
+  position: sticky;
+  left: 0;
+  background: var(--color-white);
+  z-index: 2;
+  box-shadow: 4px 0 8px rgba(44, 36, 25, 0.04);
+}
+
+.calendar-month-col {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  min-width: 36px;
+}
+
+.calendar-product-name {
+  text-align: left !important;
+  position: sticky;
+  left: 0;
+  background: var(--color-white);
+  z-index: 1;
+  padding-right: 0.75rem !important;
+}
+
+.calendar-product-name a {
+  font-weight: 600;
+  color: var(--color-leaf-green-dark);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  transition: color var(--transition-smooth);
+}
+
+.calendar-product-name a:hover {
+  color: var(--color-apple-red);
+}
+
+.calendar-season-text {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+  font-family: var(--font-body);
+}
+
+.calendar-cell {
+  padding: 0.35rem 0.2rem !important;
+}
+
+.calendar-bar {
+  display: block;
+  height: 10px;
+  border-radius: 4px;
+  background: rgba(47, 93, 70, 0.08);
+  transition: background var(--transition-smooth);
+}
+
+.calendar-bar.active {
+  background: linear-gradient(
+    90deg,
+    var(--color-leaf-green-light),
+    var(--color-apple-red-light)
+  );
+  box-shadow: 0 1px 4px rgba(47, 93, 70, 0.25);
+}
+
+.harvest-calendar-compact {
+  padding: 1rem;
+}
+
+.calendar-footer {
+  text-align: center;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .calendar-product-col,
+  .calendar-product-name {
+    min-width: 110px;
+  }
+}

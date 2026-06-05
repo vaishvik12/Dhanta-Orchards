@@ -3,8 +3,11 @@
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition-smooth),
+    box-shadow var(--transition-smooth);
   border: 1px solid var(--color-border);
+  animation: fadeInUp 0.5s ease both;
 }
 
 .product-card:hover {
@@ -49,10 +52,22 @@
   border-radius: var(--radius-sm);
 }
 
-.product-badge.out-of-stock {
+.product-badge.in-season {
   position: absolute;
   bottom: 0.75rem;
   right: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  background: var(--color-leaf-green);
+  color: var(--color-white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+.product-badge.out-of-stock {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
   padding: 0.3rem 0.75rem;
   background: var(--color-apple-red);
   color: var(--color-white);

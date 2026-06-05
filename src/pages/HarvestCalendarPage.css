@@ -1,0 +1,39 @@
+.harvest-calendar-page .calendar-page-section {
+  background: var(--color-cream);
+  margin-top: -2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.calendar-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.legend-bar {
+  width: 48px;
+  height: 10px;
+  border-radius: 4px;
+  background: rgba(47, 93, 70, 0.1);
+}
+
+.legend-bar.active {
+  background: linear-gradient(
+    90deg,
+    var(--color-leaf-green-light),
+    var(--color-apple-red-light)
+  );
+}

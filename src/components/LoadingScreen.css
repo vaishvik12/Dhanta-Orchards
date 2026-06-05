@@ -4,6 +4,8 @@
   z-index: 3000;
   display: grid;
   place-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
   background:
     radial-gradient(circle at 20% 20%, rgba(163, 45, 79, 0.18), transparent 40%),
     radial-gradient(circle at 80% 80%, rgba(61, 122, 92, 0.2), transparent 42%),
@@ -62,6 +64,11 @@
   50% {
     transform: translateY(-6px);
   }
+}
+
+.loading-screen-fade-out {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @keyframes orchardLoading {

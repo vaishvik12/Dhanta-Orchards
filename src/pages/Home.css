@@ -1,5 +1,18 @@
-.home-page .featured-section {
+.intro-section-first {
   background: var(--color-white);
+  padding-top: 3rem;
+}
+
+.calendar-preview-section {
+  background: linear-gradient(
+    180deg,
+    var(--color-white) 0%,
+    var(--color-cream) 100%
+  );
+}
+
+.home-page .featured-section {
+  background: var(--color-cream);
 }
 
 .featured-grid {

@@ -22,6 +22,9 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --transition: 0.3s ease;
+  --transition-smooth: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   --max-width: 1200px;
   --nav-height: 76px;
+  --himalayan-mist: rgba(245, 240, 232, 0.92);
+  --himalayan-peak: #1a3328;
 }

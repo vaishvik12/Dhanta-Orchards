@@ -17,7 +17,12 @@ export const fallbackProducts = [
       juiciness: 45,
       crunch: 50,
       aroma: 40
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 1800 },
+      { name: "Half Box", weight: "15 kg", price: 2700 },
+      { name: "Full Box", weight: "25 kg", price: 4500 }
+    ]
   },
   {
     id: 2,
@@ -46,7 +51,12 @@ export const fallbackProducts = [
       juiciness: 45,
       crunch: 45,
       aroma: 45
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 1800 },
+      { name: "Half Box", weight: "15 kg", price: 2700 },
+      { name: "Full Box", weight: "25 kg", price: 4500 }
+    ]
 
   },
   {
@@ -76,7 +86,12 @@ export const fallbackProducts = [
       juiciness: 50,
       crunch: 35,
       aroma: 45
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 2200 },
+      { name: "Half Box", weight: "15 kg", price: 3300 },
+      { name: "Full Box", weight: "25 kg", price: 5500 }
+    ]
   },
   {
     id: 5,
@@ -96,7 +111,12 @@ export const fallbackProducts = [
       juiciness: 40,
       crunch: 40,
       aroma: 35
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 2500 },
+      { name: "Half Box", weight: "15 kg", price: 3750 },
+      { name: "Full Box", weight: "25 kg", price: 6250 }
+    ]
 
   },
   {
@@ -117,7 +137,12 @@ export const fallbackProducts = [
       juiciness: 50,
       crunch: 20,
       aroma: 50
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 2400 },
+      { name: "Half Box", weight: "15 kg", price: 3600 },
+      { name: "Full Box", weight: "25 kg", price: 6000 }
+    ]
   },
   {
     id: 7,
@@ -137,7 +162,12 @@ export const fallbackProducts = [
       juiciness: 45,
       crunch: 50,
       aroma: 35
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 1400 },
+      { name: "Half Box", weight: "15 kg", price: 2100 },
+      { name: "Full Box", weight: "25 kg", price: 3500 }
+    ]
 
   }, {
     id: 8,
@@ -160,6 +190,17 @@ export const fallbackProducts = [
         "Tolerates heavier soils and wetter conditions better than many quince rootstocks.",
         "Induces early bearing compared to seedling rootstocks.",
         "Produces good fruit size and quality."]
+    , rootstockRatings: {
+      vigor: 40,            // ★★★★☆
+      precocity: 50,        // ★★★★★
+      anchoring: 30,        // ★★★☆☆
+      soilAdaptability: 40  // ★★★★☆
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 3000 },
+      { name: "Half Box", weight: "15 kg", price: 4500 },
+      { name: "Full Box", weight: "25 kg", price: 7500 }
+    ]
   }, {
     id: 9,
     name: 'M-793 Rootstock',
@@ -183,7 +224,12 @@ export const fallbackProducts = [
       'Produces high yields with good tree longevity.',
       'Requires less support than dwarf and semi-dwarf rootstocks.',
       'Performs well in hilly regions such as Himachal Pradesh and Jammu & Kashmir.'
-    ]
+    ], rootstockRatings: {
+      vigor: 40,            // ★★★★☆
+      precocity: 50,        // ★★★★★
+      anchoring: 30,        // ★★★☆☆
+      soilAdaptability: 40  // ★★★★☆
+    }
   }, {
     id: 10,
     name: 'M-7 Rootstock',
@@ -208,7 +254,13 @@ export const fallbackProducts = [
       'Produces root suckers that require periodic removal.',
       'Moderately winter hardy and well suited to temperate apple-growing regions.',
       'Popular choice for traditional and semi-intensive orchards.'
-    ]
+    ],// M-7
+    rootstockRatings: {
+      vigor: 35,            // ★★★½☆
+      precocity: 45,        // ★★★★½
+      anchoring: 35,        // ★★★½☆
+      soilAdaptability: 45  // ★★★★½
+    }
   }, {
     id: 11,
     name: 'MM-111 Rootstock',
@@ -232,7 +284,14 @@ export const fallbackProducts = [
       'Moderately resistant to fire blight.',
       'Long orchard lifespan.',
       'Suitable for traditional and semi-intensive orchards.'
-    ]
+    ],
+    // MM-111
+    rootstockRatings: {
+      vigor: 45,             // ★★★★½
+      droughtTolerance: 50,  // ★★★★★
+      anchoring: 50,         // ★★★★★
+      adaptability: 45       // ★★★★½
+    }
   }, {
     id: 12,
     name: 'M-116 Rootstock',
@@ -255,7 +314,14 @@ export const fallbackProducts = [
       'Suitable for medium-density orchards.',
       'High productivity and fruit quality.',
       'Performs well in replant situations.'
-    ]
+    ],
+    // M-116
+    rootstockRatings: {
+      vigor: 40,            // ★★★★☆
+      precocity: 45,        // ★★★★½
+      diseaseResistance: 50,// ★★★★★
+      anchoring: 40         // ★★★★☆
+    }
   }, {
     id: 14,
     name: 'BUD-118 Rootstock',
@@ -278,7 +344,14 @@ export const fallbackProducts = [
       'Suitable for low and medium-density orchards.',
       'Adaptable to various soil conditions.',
       'Long orchard lifespan.'
-    ]
+    ],
+    // BUD-118
+    rootstockRatings: {
+      vigor: 50,            // ★★★★★
+      coldHardiness: 50,    // ★★★★★
+      droughtTolerance: 40, // ★★★★☆
+      anchoring: 50         // ★★★★★
+    }
   }, {
     id: 15,
     name: 'EMLA-26 Rootstock',
@@ -301,7 +374,13 @@ export const fallbackProducts = [
       'Excellent fruit size and quality.',
       'Limited suckering.',
       'Widely used commercial rootstock.'
-    ]
+    ],// EMLA-26
+    rootstockRatings: {
+      vigor: 30,            // ★★★☆☆
+      precocity: 50,        // ★★★★★
+      productivity: 50,     // ★★★★★
+      anchoring: 25         // ★★½☆☆
+    }
   }, {
     id: 16,
     name: 'EMLA-111 Rootstock',
@@ -324,7 +403,14 @@ export const fallbackProducts = [
       'Long productive lifespan.',
       'Suitable for traditional orchards.',
       'Does not normally require support.'
-    ]
+    ],
+    // EMLA-111
+    rootstockRatings: {
+      vigor: 45,             // ★★★★½
+      droughtTolerance: 50,  // ★★★★★
+      anchoring: 50,         // ★★★★★
+      adaptability: 45       // ★★★★½
+    }
   }, {
     id: 17,
     name: 'EMLA-9 Rootstock',
@@ -347,7 +433,14 @@ export const fallbackProducts = [
       'Uniform tree growth.',
       'Resistant to crown rot.',
       'Industry standard dwarfing rootstock.'
-    ]
+    ],
+    // EMLA-9
+    rootstockRatings: {
+      vigor: 25,            // ★★½☆☆
+      precocity: 50,        // ★★★★★
+      productivity: 50,     // ★★★★★
+      anchoring: 20         // ★★☆☆☆
+    }
   },
   {
     id: 18,
@@ -378,7 +471,23 @@ export const fallbackProducts = [
       juiciness: 45,
       crunch: 30,
       aroma: 50
-    }
+    },packaging: [
+  {
+    name: "Gift Pack",
+    weight: "10 kg",
+    price: 3000
+  },
+  {
+    name: "Half Box",
+    weight: "15 kg",
+    price: 4500
+  },
+  {
+    name: "Full Box",
+    weight: "25 kg",
+    price: 7500
+  }
+]
   }, {
     id: 19,
     name: 'Red Golden Apple',
@@ -407,7 +516,12 @@ export const fallbackProducts = [
       juiciness: 45,
       crunch: 45,
       aroma: 45
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 1600 },
+      { name: "Half Box", weight: "15 kg", price: 2400 },
+      { name: "Full Box", weight: "25 kg", price: 4000 }
+    ]
   }, {
     id: 20,
     name: 'Persimmon',
@@ -438,7 +552,12 @@ export const fallbackProducts = [
       juiciness: 40,
       crunch: 15,
       aroma: 40
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 2500 },
+      { name: "Half Box", weight: "15 kg", price: 3750 },
+      { name: "Full Box", weight: "25 kg", price: 6250 }
+    ]
   }, {
     id: 21,
     name: 'Golden Delicious Apple',
@@ -469,6 +588,11 @@ export const fallbackProducts = [
       juiciness: 45,
       crunch: 40,
       aroma: 45
-    }
+    },
+    packaging: [
+      { name: "Gift Pack", weight: "10 kg", price: 1500 },
+      { name: "Half Box", weight: "15 kg", price: 2250 },
+      { name: "Full Box", weight: "25 kg", price: 3750 }
+    ]
   }
 ];

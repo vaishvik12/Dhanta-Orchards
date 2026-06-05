@@ -72,7 +72,35 @@
   font-size: 2rem;
   font-weight: 700;
   color: var(--color-apple-red);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.season-status-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  transition: opacity var(--transition-smooth);
+}
+
+.season-status-banner.available {
+  background: rgba(47, 93, 70, 0.12);
+  color: var(--color-leaf-green-dark);
+  border: 1px solid rgba(47, 93, 70, 0.25);
+}
+
+.season-status-banner.upcoming {
+  background: rgba(122, 32, 56, 0.08);
+  color: var(--color-apple-red-dark);
+  border: 1px solid rgba(122, 32, 56, 0.15);
+}
+
+.season-status-icon {
+  font-size: 1.1rem;
 }
 
 .detail-price span {
@@ -183,4 +211,39 @@
 .rating-row img {
   height: 20px;
   width: auto;
+}
+.packaging-options {
+  margin: 1.5rem 0;
+}
+
+.packaging-options h3 {
+  margin-bottom: 1rem;
+}
+
+.package-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.package-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.package-info strong {
+  font-weight: 600;
+}
+
+.package-info span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.package-price {
+  font-weight: 700;
+  color: var(--primary-color);
 }

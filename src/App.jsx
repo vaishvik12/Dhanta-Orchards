@@ -11,17 +11,21 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminLogin from './pages/AdminLogin';
+import HarvestCalendarPage from './pages/HarvestCalendarPage';
 import ProtectedRoute from './components/ProtectedRoute';
+import MobileContactBar from './components/MobileContact';
 
 function App() {
   const [isBootLoading, setIsBootLoading] = useState(true);
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
     let timeoutId;
 
     const finishLoading = () => {
       timeoutId = setTimeout(() => {
-        setIsBootLoading(false);
+        setIsFadingOut(true);
+        setTimeout(() => setIsBootLoading(false), 500);
       }, 900);
     };
 
@@ -38,7 +42,7 @@ function App() {
   }, []);
 
   if (isBootLoading) {
-    return <LoadingScreen />;
+    return <LoadingScreen fading={isFadingOut} />;
   }
 
   return (
@@ -51,6 +55,7 @@ function App() {
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/harvest-calendar" element={<HarvestCalendarPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route
@@ -64,6 +69,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <MobileContactBar />
     </div>
   );
 }

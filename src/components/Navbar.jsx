@@ -11,6 +11,7 @@ function Navbar() {
   const navLinks = [
     { to: '/', label: 'Home', end: true },
     { to: '/products', label: 'Products' },
+    { to: '/harvest-calendar', label: 'Harvest Calendar' },
     { to: '/about', label: 'Our Story' },
     { to: '/gallery', label: 'Gallery' },
     { to: '/contact', label: 'Contact' },

@@ -1,0 +1,44 @@
+.mobile-contact-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-contact-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 12px 0;
+    z-index: 9999;
+
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-contact-bar.show {
+    transform: translateY(0);
+  }
+
+  .mobile-contact-bar.hide {
+    transform: translateY(100%);
+  }
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.mobile-contact-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 25px;
+}

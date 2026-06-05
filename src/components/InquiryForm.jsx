@@ -107,6 +107,8 @@ function InquiryForm({ productId, productName, productCategory,onSuccess }) {
         message:
           'Unable to submit inquiry. Please try again later.',
       });
+    } finally {
+      setSubmitting(false);
     }
   };
 
