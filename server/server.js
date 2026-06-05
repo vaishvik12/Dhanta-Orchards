@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.get('/api/health', (_req, res) => {
-  res.json({ status: 'ok', message: 'Dhanta Orchards API is running' });
+  res.json({ status: 'ok', message: 'Dwarkadhish Orchards API is running' });
 });
 
 app.use('/api/products', productRoutes);

@@ -10,62 +10,73 @@ export const fallbackProducts = [
     stock: 500,
     size: 'Medium-Large',
     weight: '150-200g',
-    image: 'Images/Royal-delicious.jpg',
+    image: 'Images/Apple/Royal-delicious.jpg',
     season: 'September – November',
+    ratings: {
+      sweetness: 45,
+      juiciness: 45,
+      crunch: 50,
+      aroma: 40
+    }
   },
-{
-  id: 2,
-  name: 'Red Chief Apple',
-  category: 'Apples',
-  variety: 'Red Delicious',
-  description:
-    'Red Chief is a premium spur-type strain of Red Delicious known for its deep crimson-red colour, crisp texture, and sweet flavour. The variety produces highly attractive fruits with excellent shelf life, making it one of the most popular commercial apples grown in Himachal Pradesh.',
-  price: 160,
-  stock: 400,
-  size: 'Medium to Large',
-  weight: '150-220g',
-  image: 'Images/Red-Chief.jpg',
-  season: 'September – October',
-  Characteristics: [
-    'Deep crimson-red skin with excellent colour development.',
-    'Sweet flavour with mild acidity.',
-    'Crisp, juicy, and firm flesh.',
-    'Excellent shelf life and storage quality.',
-    'High market demand and consumer appeal.',
-    'Spur-type growth habit with high productivity.',
-    'Suitable for fresh consumption and gifting.',
-    'Performs exceptionally well in Himachal Pradesh orchards.'
-  ]
-},
+  {
+    id: 2,
+    name: 'Gala Apple',
+    category: 'Apples',
+    variety: 'Galaval Gala',
+    description:
+      'Galaval Gala is a premium early-colouring strain of Gala apple renowned for its bright red striped skin, exceptional sweetness, and crisp juicy texture. The variety produces highly attractive fruits with excellent eating quality and strong consumer demand, making it one of the most popular Gala strains grown in Himachal Pradesh.',
+    price: 180,
+    stock: 400,
+    size: 'Medium',
+    weight: '140-200g',
+    image: 'Images/Apple/Galaval-Gala.jpg',
+    season: 'August – September',
+    Characteristics: [
+      'Bright red striped skin with excellent colour development.',
+      'Sweet, aromatic flavour with low acidity.',
+      'Crisp, juicy, and fine-textured flesh.',
+      'Early colouring strain requiring fewer harvest picks.',
+      'Highly attractive appearance and strong market demand.',
+      'Excellent eating quality and consumer preference.',
+      'Suitable for fresh consumption, salads, and gifting.',
+      'Performs exceptionally well in Himachal Pradesh orchards.'
+    ], ratings: {
+      sweetness: 50,
+      juiciness: 45,
+      crunch: 45,
+      aroma: 45
+    }
+
+  },
   {
     id: 3,
-    name: 'Moti Dandi Pear',
+    name: 'Carmen Pear',
     category: 'Pears',
-    variety: 'Williams',
+    variety: 'Carmen',
     description:
-      `An old, traditional pear cultivar grown in Himachal Pradesh.
-Known for its thick stalk "moti dandi" literally means thick stem.
-Sweet, juicy flesh. Perfect for fresh eating or elegant desserts.`,
-    price: 200,
-    stock: 300,
-    size: 'Medium to large ',
-    weight: '180-250g',
-    image: 'Images/Moti-dandi.jpg',
-    season: 'August – October',
-  },
-  {
-    id: 4,
-    name: 'Golden Peach',
-    category: 'Peaches',
-    variety: 'Golden Queen',
-    description:
-      'Sun-kissed peaches with velvety skin and honeyed flesh. Harvested at the perfect moment of ripeness.',
+      'Carmen Pear is a premium early-season European pear variety prized for its attractive red-blushed skin, sweet flavour, and juicy melting flesh. Harvested before many traditional pear cultivars, it offers exceptional eating quality and has become increasingly popular among growers and consumers alike.',
     price: 220,
-    stock: 250,
-    size: 'Medium',
-    weight: '120-160g',
-    image: 'https://images.unsplash.com/photo-1532704868953-d85f24176d73?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVhY2h8ZW58MHx8MHx8fDA%3D',
-    season: 'July – September',
+    stock: 300,
+    size: 'Medium to Large',
+    weight: '180-250g',
+    image: 'Images/Pear/Carmen.jpg',
+    season: 'July – August',
+    Characteristics: [
+      'Attractive green-yellow skin with a bright red blush.',
+      'Sweet flavour with a pleasant aroma.',
+      'Juicy, smooth, and melting flesh.',
+      'Early-season variety harvested before most pears.',
+      'Excellent fresh eating quality.',
+      'Highly attractive appearance and market appeal.',
+      'Good shelf life when properly stored.',
+      'Performs well in Himachal Pradesh growing conditions.'
+    ], ratings: {
+      sweetness: 45,
+      juiciness: 50,
+      crunch: 35,
+      aroma: 45
+    }
   },
   {
     id: 5,
@@ -78,8 +89,15 @@ Sweet, juicy flesh. Perfect for fresh eating or elegant desserts.`,
     stock: 200,
     size: 'Large',
     weight: '180-220g',
-    image: 'Images/Red-delicious.jpg',
+    image: 'Images/Apple/Red-delicious.jpg',
     season: 'October – December',
+    ratings: {
+      sweetness: 45,
+      juiciness: 40,
+      crunch: 40,
+      aroma: 35
+    }
+
   },
   {
     id: 6,
@@ -94,6 +112,12 @@ Sweet, juicy flesh. Perfect for fresh eating or elegant desserts.`,
     weight: '130-170g',
     image: 'https://plus.unsplash.com/premium_photo-1692809723050-1b66ba686b4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2hpdGUlMjBwZWFjaHxlbnwwfHwwfHx8MA%3D%3D',
     season: 'July – August',
+    ratings: {
+      sweetness: 50,
+      juiciness: 50,
+      crunch: 20,
+      aroma: 50
+    }
   },
   {
     id: 7,
@@ -106,8 +130,15 @@ Sweet, juicy flesh. Perfect for fresh eating or elegant desserts.`,
     stock: 100,
     size: 'Medium',
     weight: '130-170g',
-    image: 'https://images.unsplash.com/photo-1719024651951-614f7c51bc7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R3Jhbm55JTIwU21pdGh8ZW58MHx8MHx8fDA%3D',
+    image: 'Images/TartyGoldenApple - Copy.jpeg',
     season: 'July – August',
+    ratings: {
+      sweetness: 20,
+      juiciness: 45,
+      crunch: 50,
+      aroma: 35
+    }
+
   }, {
     id: 8,
     name: 'BA-29 Rootstock',
@@ -329,7 +360,7 @@ Sweet, juicy flesh. Perfect for fresh eating or elegant desserts.`,
     stock: 100,
     size: 'Medium to Large',
     weight: '180-250g',
-    image: 'Images/Bergamot-Pear.jpg',
+    image: 'Images/Pear/Bergamot-Pear.jpg',
     season: 'August – September',
     Characteristics: [
       'Traditional European pear variety.',
@@ -341,79 +372,103 @@ Sweet, juicy flesh. Perfect for fresh eating or elegant desserts.`,
       'Performs well in temperate and hill climates.',
       'Moderately vigorous and productive trees.',
       'Good market appeal due to unique shape and flavor.'
-    ]
-  },  {
-  id: 19,
-  name: 'Red Golden Apple',
-  category: 'Apples',
-  variety: 'Red Golden Delicious',
-  description:
-    'Red Golden Delicious is an attractive apple variety known for its bright red skin, crisp texture, and exceptionally sweet flavour. A sport of the famous Golden Delicious, it combines excellent eating quality with good storage life, making it a popular choice among growers and consumers alike.',
-  price: 160,
-  stock: 400,
-  size: 'Medium to Large',
-  weight: '150-220g',
-  image: 'Images/Red-Golden.webp',
-  season: 'September – October',
-  Characteristics: [
-    'Bright red skin with an attractive appearance.',
-    'Sweet flavour with mild acidity.',
-    'Crisp, juicy, and aromatic flesh.',
-    'Excellent for fresh consumption.',
-    'Good shelf life and storage quality.',
-    'High market demand due to its appearance and taste.',
-    'Performs well in temperate Himalayan climates.',
-    'Productive and reliable bearer.'
-  ]
-},{
-  id: 20,
-  name: 'Persimmon',
-  category: 'Exotic Fruits',
-  variety: 'Japanese Persimmon (Japani Fal)',
-  description:
-    'Japanese Persimmon, locally known as Japani Fal, is a delicious autumn fruit prized for its vibrant orange colour, honey-like sweetness, and smooth texture. Originally introduced from East Asia, it thrives in the temperate climate of Himachal Pradesh and has become a popular specialty fruit in Himalayan orchards. The fruit is enjoyed fresh when fully ripe and is rich in vitamins, antioxidants, and dietary fibre.',
-  price: 250,
-  stock: 100,
-  size: 'Medium to Large',
-  weight: '150-300g',
-  image: 'Images/Persimmon.webp',
-  season: 'October – November',
-  Characteristics: [
-    'Bright orange to deep orange fruit colour.',
-    'Exceptionally sweet flavour when fully ripe.',
-    'Soft, smooth, and custard-like texture at maturity.',
-    'Rich source of Vitamin A, Vitamin C, and antioxidants.',
-    'Excellent for fresh consumption.',
-    'Long shelf life when harvested at proper maturity.',
-    'Performs well in temperate Himalayan regions.',
-    'Attractive fruit with high market value.',
-    'Low maintenance compared to many other fruit crops.',
-    'Popular seasonal delicacy in Himachal Pradesh.'
-  ]
-},{
-  id: 21,
-  name: 'Golden Delicious Apple',
-  category: 'Apples',
-  variety: 'Golden Delicious',
-  description:
-    'Golden Delicious is one of the world’s most popular apple varieties, celebrated for its golden-yellow skin, sweet flavour, and crisp juicy texture. The fruit is highly versatile, enjoyed fresh, in salads, juices, and baked desserts. Its excellent storage life and consistent quality have made it a favourite among both growers and consumers in the apple-growing regions of Himachal Pradesh.',
-  price: 150,
-  stock: 400,
-  size: 'Medium to Large',
-  weight: '150-220g',
-  image: 'Images/GoldenApple.jpg',
-  season: 'September – October',
-  Characteristics: [
-    'Golden-yellow skin with an attractive appearance.',
-    'Sweet flavour with low acidity.',
-    'Crisp, juicy, and aromatic flesh.',
-    'Excellent for fresh consumption and baking.',
-    'Good shelf life and storage quality.',
-    'Highly versatile culinary apple.',
-    'Reliable and productive variety.',
-    'Performs exceptionally well in temperate Himalayan climates.',
-    'Popular among consumers for its natural sweetness.',
-    'One of the most widely grown commercial apple varieties.'
-  ]
-}
+    ],
+    ratings: {
+      sweetness: 45,
+      juiciness: 45,
+      crunch: 30,
+      aroma: 50
+    }
+  }, {
+    id: 19,
+    name: 'Red Golden Apple',
+    category: 'Apples',
+    variety: 'Red Golden Delicious',
+    description:
+      'Red Golden Delicious is an attractive apple variety known for its bright red skin, crisp texture, and exceptionally sweet flavour. A sport of the famous Golden Delicious, it combines excellent eating quality with good storage life, making it a popular choice among growers and consumers alike.',
+    price: 160,
+    stock: 400,
+    size: 'Medium to Large',
+    weight: '150-220g',
+    image: 'Images/Apple/Red-Golden.webp',
+    season: 'September – October',
+    Characteristics: [
+      'Bright red skin with an attractive appearance.',
+      'Sweet flavour with mild acidity.',
+      'Crisp, juicy, and aromatic flesh.',
+      'Excellent for fresh consumption.',
+      'Good shelf life and storage quality.',
+      'High market demand due to its appearance and taste.',
+      'Performs well in temperate Himalayan climates.',
+      'Productive and reliable bearer.'
+    ],
+    ratings: {
+      sweetness: 50,
+      juiciness: 45,
+      crunch: 45,
+      aroma: 45
+    }
+  }, {
+    id: 20,
+    name: 'Persimmon',
+    category: 'Exotic Fruits',
+    variety: 'Japanese Persimmon (Japani Fal)',
+    description:
+      'Japanese Persimmon, locally known as Japani Fal, is a delicious autumn fruit prized for its vibrant orange colour, honey-like sweetness, and smooth texture. Originally introduced from East Asia, it thrives in the temperate climate of Himachal Pradesh and has become a popular specialty fruit in Himalayan orchards. The fruit is enjoyed fresh when fully ripe and is rich in vitamins, antioxidants, and dietary fibre.',
+    price: 250,
+    stock: 100,
+    size: 'Medium to Large',
+    weight: '150-300g',
+    image: 'Images/Exotic Fruits/Persimmon.webp',
+    season: 'October – November',
+    Characteristics: [
+      'Bright orange to deep orange fruit colour.',
+      'Exceptionally sweet flavour when fully ripe.',
+      'Soft, smooth, and custard-like texture at maturity.',
+      'Rich source of Vitamin A, Vitamin C, and antioxidants.',
+      'Excellent for fresh consumption.',
+      'Long shelf life when harvested at proper maturity.',
+      'Performs well in temperate Himalayan regions.',
+      'Attractive fruit with high market value.',
+      'Low maintenance compared to many other fruit crops.',
+      'Popular seasonal delicacy in Himachal Pradesh.'
+    ],
+    ratings: {
+      sweetness: 50,
+      juiciness: 40,
+      crunch: 15,
+      aroma: 40
+    }
+  }, {
+    id: 21,
+    name: 'Golden Delicious Apple',
+    category: 'Apples',
+    variety: 'Golden Delicious',
+    description:
+      'Golden Delicious is one of the world’s most popular apple varieties, celebrated for its golden-yellow skin, sweet flavour, and crisp juicy texture. The fruit is highly versatile, enjoyed fresh, in salads, juices, and baked desserts. Its excellent storage life and consistent quality have made it a favourite among both growers and consumers in the apple-growing regions of Himachal Pradesh.',
+    price: 150,
+    stock: 400,
+    size: 'Medium to Large',
+    weight: '150-220g',
+    image: 'Images/GoldenApple.jpg',
+    season: 'September – October',
+    Characteristics: [
+      'Golden-yellow skin with an attractive appearance.',
+      'Sweet flavour with low acidity.',
+      'Crisp, juicy, and aromatic flesh.',
+      'Excellent for fresh consumption and baking.',
+      'Good shelf life and storage quality.',
+      'Highly versatile culinary apple.',
+      'Reliable and productive variety.',
+      'Performs exceptionally well in temperate Himalayan climates.',
+      'Popular among consumers for its natural sweetness.',
+      'One of the most widely grown commercial apple varieties.'
+    ],
+    ratings: {
+      sweetness: 50,
+      juiciness: 45,
+      crunch: 40,
+      aroma: 45
+    }
+  }
 ];

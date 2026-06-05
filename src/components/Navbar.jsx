@@ -22,7 +22,7 @@ function Navbar() {
         <Link to="/" className="navbar-brand" onClick={closeMenu}>
           <span className="brand-icon">🍎</span>
           <div className="brand-text">
-            <span className="brand-name">Dhanta Orchards</span>
+            <span className="brand-name">Dwarkadhish Orchards</span>
             <span className="brand-tagline">Jubbal, Himachal Pradesh</span>
           </div>
         </Link>

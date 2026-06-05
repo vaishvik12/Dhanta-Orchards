@@ -71,9 +71,7 @@ function Contact() {
             Located in the scenic hills of Himachal Pradesh, approximately 90 km from Shimla.
           </p>
           <div className="map-embed">
-            <iframe
-              title="Dhanta Orchards location in Jubbal, Himachal Pradesh"
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.4976257268157!2d77.70223176674259!3d31.113821565111305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905f7006203b8f9%3A0x407a7275fcffb183!2sDhar%20%2Cjubbal!5e0!3m2!1sen!2sus!4v1780401447971!5m2!1sen!2sus" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.559397999831!2d77.7005076520162!3d31.11301820164587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905f74b6a98c1d3%3A0x42a1ca834689e5c7!2sDwarika%20kutti!5e0!3m2!1sen!2sin!4v1780568759475!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}

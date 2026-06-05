@@ -7,7 +7,7 @@ function LoadingScreen() {
         <span className="loading-fruit" aria-hidden="true">
           🍎
         </span>
-        <h1>Dhanta Orchards</h1>
+        <h1>Dwarkadhish  Orchards</h1>
         <p>Preparing your Himalayan orchard experience...</p>
         <div className="loading-bar" aria-hidden="true">
           <span className="loading-progress" />

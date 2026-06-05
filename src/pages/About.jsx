@@ -15,7 +15,7 @@ function About() {
       <section className="section about-intro">
         <div className="container about-intro-grid">
           <div className="about-intro-text">
-            <span className="about-label">Dhanta Orchards</span>
+            <span className="about-label">Dwarkadhish Orchards</span>
             <h2>Rooted in the Himalayas</h2>
             <p>
               In the serene hills of Jubbal, Himachal Pradesh, where morning mist drapes
@@ -48,7 +48,7 @@ function About() {
               <span className="legacy-year">1920s</span>
               <h3>The Beginning</h3>
               <p>
-                More than a century ago, when commercial apple cultivation was still in its infancy in the hills of Jubbal, our forefathers recognized the region's potential and planted the first roots of what would become Dhanta Orchards. Starting with a small plot of land and guided by determination, patience, and a deep connection to the mountains, they nurtured their orchards through changing seasons and generations. Their pioneering spirit helped establish apple farming in the area, laying the foundation for a thriving family enterprise that continues to flourish today.
+                More than a century ago, when commercial apple cultivation was still in its infancy in the hills of Jubbal, our forefathers recognized the region's potential and planted the first roots of what would become Dwarkadhish Orchards. Starting with a small plot of land and guided by determination, patience, and a deep connection to the mountains, they nurtured their orchards through changing seasons and generations. Their pioneering spirit helped establish apple farming in the area, laying the foundation for a thriving family enterprise that continues to flourish today.
 
               </p>
             </div>

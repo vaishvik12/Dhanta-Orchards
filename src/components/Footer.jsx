@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-top container">
         <div className="footer-brand">
-          <h3>Dhanta Orchards</h3>
+          <h3>Dwarkadhish Orchards</h3>
           <p>
             A century of Himalayan fruit heritage in Jubbal, Himachal Pradesh.
             Grown with care by Pankaj &amp; Manjeet Dhanta.
@@ -51,7 +51,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom container">
-        <p>&copy; {currentYear} Dhanta Orchards. All rights reserved.</p>
+        <p>&copy; {currentYear} Dwarkadhish Orchards. All rights reserved.</p>
         <p className="footer-owners">Pankaj Dhanta &amp; Manjeet Dhanta</p>
       </div>
     </footer>

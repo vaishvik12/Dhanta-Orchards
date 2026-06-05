@@ -63,14 +63,14 @@ function Home() {
             <span className="intro-label">Our Orchard</span>
             <h2>A Century of Fruit in the Himalayas</h2>
             <p>
-              Nestled in the misty hills of Jubbal, Himachal Pradesh, Dhanta Orchards has been cultivating premium fruits for over a century. Today, Pankaj and Manjeet Dhanta proudly continue the legacy of generations before them, nurturing apples, pears, peaches, persimmons, and high quality rootstocks with patience, care, and deep respect for the land.
+              Nestled in the misty hills of Jubbal, Himachal Pradesh, Dwarkadhish Orchards has been cultivating premium fruits for over a century. Today, Pankaj and Manjeet Dhanta proudly continue the legacy of generations before them, nurturing apples, pears, peaches, persimmons, and high quality rootstocks with patience, care, and deep respect for the land.
             </p>
             <p>
               Blessed with cool mountain air, pure spring water, and fertile Himalayan soil, our orchards produce fruits renowned for their exceptional flavour, crisp texture, and natural sweetness. Combining traditional orcharding practices with modern horticultural expertise, we remain committed to sustainable cultivation, careful stewardship of our environment, and the highest standards of quality.
 
             </p>
             <p>
-              Beyond growing fruit, we cultivate trust. From selecting premium rootstocks and managing healthy orchards to carefully grading, packing, and delivering our harvest, every step reflects our family's dedication to excellence. For more than 100 years, Dhanta Orchards has been rooted in the values of hard work, integrity, and a passion for bringing the finest produce from the Himalayas to customers across India.
+              Beyond growing fruit, we cultivate trust. From selecting premium rootstocks and managing healthy orchards to carefully grading, packing, and delivering our harvest, every step reflects our family's dedication to excellence. For more than 100 years, Dwarkadhish Orchards has been rooted in the values of hard work, integrity, and a passion for bringing the finest produce from the Himalayas to customers across India.
             </p>
             <p>
               This version feels more premium, tells the story of the orchard, highlights Pankaj's horticultural expertise and the rootstock business, and fits well in an "Our Orchard" section.</p>

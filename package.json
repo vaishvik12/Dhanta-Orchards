@@ -2,7 +2,7 @@
   "name": "dhanta-orchards",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://vaishvik12.github.io/dhanta-orchards",
+  "homepage": "https://vaishvik12.github.io/dwarkadhish-orchards",
   "type": "module",
   "scripts": {
     "dev": "vite",

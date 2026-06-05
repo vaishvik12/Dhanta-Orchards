@@ -32,18 +32,18 @@ function ProductDetails() {
   // }, [id]);
 
   useEffect(() => {
-  const found = fallbackProducts.find(
-    (p) => p.id === Number(id)
-  );
+    const found = fallbackProducts.find(
+      (p) => p.id === Number(id)
+    );
 
-  if (found) {
-    setProduct(found);
-  } else {
-    setError('Product not found.');
-  }
+    if (found) {
+      setProduct(found);
+    } else {
+      setError('Product not found.');
+    }
 
-  setLoading(false);
-}, [id]);
+    setLoading(false);
+  }, [id]);
 
   if (loading) {
     return <p className="loading-state container">Loading product...</p>;
@@ -87,7 +87,10 @@ function ProductDetails() {
             {product.variety && (
               <p className="detail-variety">{product.variety}</p>
             )}
-            <p className="detail-price">₹{Number(product.price).toLocaleString('en-IN')} <span>/ kg</span></p>
+            <p className="detail-price">
+              ₹{Number(product.price).toLocaleString('en-IN')}
+              {product.category === 'RootStocks' ? ' / plant' : ' / kg'}
+            </p>
 
             <div className="detail-meta">
               <div className="meta-item">
@@ -109,6 +112,44 @@ function ProductDetails() {
                 </span>
               </div>
             </div>
+
+            {product.ratings && (
+              <div className="taste-profile">
+                <h3>Taste Profile</h3>
+
+                <div className="rating-row">
+                  <span>Sweetness</span>
+                  <img
+                    src={`Images/ratings/rating-${product.ratings.sweetness}.png`}
+                    alt="Sweetness Rating"
+                  />
+                </div>
+
+                <div className="rating-row">
+                  <span>Juiciness</span>
+                  <img
+                    src={`Images/ratings/rating-${product.ratings.juiciness}.png`}
+                    alt="Juiciness Rating"
+                  />
+                </div>
+
+                <div className="rating-row">
+                  <span>Crunch</span>
+                  <img
+                    src={`Images/ratings/rating-${product.ratings.crunch}.png`}
+                    alt="Crunch Rating"
+                  />
+                </div>
+
+                <div className="rating-row">
+                  <span>Aroma</span>
+                  <img
+                    src={`Images/ratings/rating-${product.ratings.aroma}.png`}
+                    alt="Aroma Rating"
+                  />
+                </div>
+              </div>
+            )}
 
             <p className="detail-description">{product.description}</p>
 

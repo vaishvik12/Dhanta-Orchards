@@ -6,7 +6,7 @@ import api from '../api/client';
 import { fallbackProducts } from '../data/fallbackProducts';
 import './Products.css';
 
-const CATEGORIES = ['All', 'Apples', 'Pears', 'Peaches','Rootstocks'];
+const CATEGORIES = ['All', 'Apples', 'Pears', 'Peaches','Rootstocks','Exotic Fruits'];
 
 function Products() {
   const [products, setProducts] = useState([]);

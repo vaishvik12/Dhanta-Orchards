@@ -31,7 +31,7 @@ function ContactForm() {
     setStatus({ type: '', message: '' });
 
     try {
-      // Email to Dhanta Orchards
+      // Email to Dwarkadhish Orchards
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
