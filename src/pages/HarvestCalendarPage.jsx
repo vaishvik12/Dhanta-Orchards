@@ -19,7 +19,7 @@ function HarvestCalendarPage() {
     <div className="harvest-calendar-page">
       <Hero
         title="Harvest Calendar"
-        subtitle="Plan your orders around our Himalayan harvest seasons — apples, pears, peaches, and more."
+        subtitle="Plan your orders around our Himalayan harvest seasons. Apples, pears, peaches, and more."
         showCta={false}
         compact
       />
@@ -28,7 +28,7 @@ function HarvestCalendarPage() {
         <div className="container">
           <p className="calendar-intro">
             Each bar shows when a variety is typically harvested in our Jubbal orchards.
-            Seasons may shift slightly with weather — contact us for the freshest availability.
+            Seasons may shift slightly with weather <br/> contact us for the freshest availability.
           </p>
 
           {loading ? (

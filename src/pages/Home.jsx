@@ -36,7 +36,7 @@ function Home() {
         <div className="container intro-grid">
           <div className="intro-image">
             <img
-              src="Images/Orchard.jpg"
+              src="Images/Orchard.jpeg"
               alt="Himalayan orchard terraces in Jubbal"
             />
           </div>

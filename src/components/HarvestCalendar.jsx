@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { MONTH_SHORT, parseSeasonMonths } from '../utils/seasonUtils';
 import './HarvestCalendar.css';
 
-const DISPLAY_MONTHS = [7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+const DISPLAY_MONTHS = [ 7,8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
 
 function HarvestCalendar({ products, compact = false, showLink = true }) {
   const calendarProducts = products

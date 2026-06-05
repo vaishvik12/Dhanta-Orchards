@@ -109,7 +109,7 @@ function monthsUntil(targetMonth, currentMonth) {
   return 12 - currentMonth + targetMonth;
 }
 
-export function getUpcomingHarvests(products, date = new Date(), withinMonths = 4) {
+export function getUpcomingHarvests(products, date = new Date(), withinMonths = 2) {
   const currentMonth = date.getMonth() + 1;
 
   return products

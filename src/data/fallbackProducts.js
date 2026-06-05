@@ -10,7 +10,7 @@ export const fallbackProducts = [
     stock: 500,
     size: 'Medium-Large',
     weight: '150-200g',
-    image: 'Images/Apple/Royal-delicious.jpg',
+    image: 'Images/Apple/Royal-Delecious.jpeg',
     season: 'September – November',
     ratings: {
       sweetness: 45,
@@ -499,7 +499,7 @@ export const fallbackProducts = [
     stock: 400,
     size: 'Medium to Large',
     weight: '150-220g',
-    image: 'Images/Apple/Red-Golden.webp',
+    image: 'Images/Apple/Red-Golden.jpg',
     season: 'September – October',
     Characteristics: [
       'Bright red skin with an attractive appearance.',
@@ -569,7 +569,7 @@ export const fallbackProducts = [
     stock: 400,
     size: 'Medium to Large',
     weight: '150-220g',
-    image: 'Images/GoldenApple.jpg',
+    image: 'Images/Apple/Golden-Delicious.webp',
     season: 'September – October',
     Characteristics: [
       'Golden-yellow skin with an attractive appearance.',
@@ -594,5 +594,113 @@ export const fallbackProducts = [
       { name: "Half Box", weight: "15 kg", price: 2250 },
       { name: "Full Box", weight: "25 kg", price: 3750 }
     ]
-  }
+  },{
+  id: 22,
+  name: 'Red Honeycrisp Apple',
+  category: 'Apples',
+  variety: 'Honeycrisp',
+  description:
+    'Red Honeycrisp is a premium apple variety renowned for its exceptional crispness, explosive juiciness, and perfectly balanced sweet-tart flavour. Developed for superior eating quality, Honeycrisp has become one of the most sought-after apple varieties worldwide. Its attractive red skin, large fruit size, and outstanding texture make it a favourite for fresh consumption and gifting.',
+  price: 320,
+  stock: 250,
+  size: 'Large',
+  weight: '180-280g',
+  image: 'Images/Apple/Royal-Red-Honey-Crisp.jpeg',
+  season: 'September – October',
+  Characteristics: [
+    'Exceptional crisp and crunchy texture.',
+    'Extremely juicy flesh with a refreshing bite.',
+    'Perfect balance of sweetness and mild acidity.',
+    'Large, attractive fruits with bright red coloration.',
+    'Premium dessert apple with outstanding eating quality.',
+    'Excellent consumer demand and market value.',
+    'Ideal for fresh consumption, gifting, and fruit platters.',
+    'Good storage life under proper conditions.',
+    'Performs well in temperate Himalayan climates.',
+    'One of the most popular premium apples worldwide.'
+  ],
+  ratings: {
+    sweetness: 45,
+    juiciness: 50,
+    crunch: 50,
+    aroma: 45
+  },
+  packaging: [
+    { name: 'Gift Pack', weight: '10 kg', price: 3200 },
+    { name: 'Half Box', weight: '15 kg', price: 4800 },
+    { name: 'Full Box', weight: '25 kg', price: 8000 }
+  ]
+},{
+  id: 23,
+  name: 'Red Cameo Apple',
+  category: 'Apples',
+  variety: 'Cameo',
+  description:
+    'Red Cameo is a premium late-season apple variety prized for its attractive bright red striped skin, exceptional crunch, and rich sweet flavour. Originally discovered as a chance seedling in Washington State, USA, Cameo has gained popularity worldwide for its excellent eating quality, long storage life, and attractive appearance. The variety performs well in temperate Himalayan orchards and is highly appreciated by consumers seeking a crisp, flavourful dessert apple.',
+  price: 280,
+  stock: 250,
+  size: 'Medium to Large',
+  weight: '170-250g',
+  image: 'Images/Apple/Red-Cameo.jpeg',
+  season: 'October – November',
+  Characteristics: [
+    'Bright red striped skin with a creamy yellow background.',
+    'Exceptionally crisp and crunchy texture.',
+    'Sweet flavour with subtle pear and citrus notes.',
+    'Dense, juicy flesh with excellent eating quality.',
+    'Long storage life while retaining crispness.',
+    'Highly attractive appearance and premium market value.',
+    'Excellent for fresh consumption and fruit platters.',
+    'Good resistance to bruising during transport.',
+    'Performs well in Himalayan growing conditions.',
+    'Popular premium dessert apple variety.'
+  ],
+  ratings: {
+    sweetness: 45,
+    juiciness: 45,
+    crunch: 50,
+    aroma: 40
+  },
+  packaging: [
+    { name: 'Gift Pack', weight: '10 kg', price: 2800 },
+    { name: 'Half Box', weight: '15 kg', price: 4200 },
+    { name: 'Full Box', weight: '25 kg', price: 7000 }
+  ]
+},{
+  id: 24,
+  name: 'Crimson Crisp Apple',
+  category: 'Apples',
+  variety: 'Crimson Crisp',
+  description:
+    'Crimson Crisp is a premium disease-resistant apple variety celebrated for its deep crimson-red skin, exceptional crunch, and balanced sweet-tart flavour. Developed through modern breeding programs, it combines outstanding eating quality with natural resistance to apple scab. The fruit remains remarkably crisp even after storage, making it a favourite among consumers seeking both flavour and texture.',
+  price: 300,
+  stock: 220,
+  size: 'Medium to Large',
+  weight: '160-240g',
+  image: 'Images/Apple/Crimson-Crisp.jpeg',
+  season: 'September – October',
+  Characteristics: [
+    'Deep crimson-red skin with an attractive glossy finish.',
+    'Exceptionally crisp and firm texture.',
+    'Balanced sweet-tart flavour with refreshing acidity.',
+    'Excellent natural resistance to apple scab.',
+    'Retains crunch and flavour during storage.',
+    'High consumer demand due to premium eating quality.',
+    'Ideal for fresh consumption and fruit platters.',
+    'Good shelf life and transportability.',
+    'Performs well in temperate Himalayan climates.',
+    'Suitable for sustainable and low-spray orchard systems.'
+  ],
+  ratings: {
+    sweetness: 40,
+    juiciness: 45,
+    crunch: 50,
+    aroma: 40
+  },
+  packaging: [
+    { name: 'Gift Pack', weight: '10 kg', price: 3000 },
+    { name: 'Half Box', weight: '15 kg', price: 4500 },
+    { name: 'Full Box', weight: '25 kg', price: 7500 }
+  ]
+}
 ];

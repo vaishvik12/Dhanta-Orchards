@@ -14,7 +14,7 @@ function CurrentlyInSeason({ products }) {
   const fruits = products.filter(isFruitProduct);
 
   const harvesting = fruits.filter((p) => isProductInSeason(p, now));
-  const upcoming = getUpcomingHarvests(fruits, now, 4);
+  const upcoming = getUpcomingHarvests(fruits, now, 2);
 
   return (
     <section className="section currently-in-season" id="in-season">

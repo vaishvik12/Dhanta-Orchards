@@ -45,25 +45,36 @@ function About() {
           <h2 className="section-title">A Legacy of Care</h2>
           <div className="legacy-timeline">
             <div className="legacy-item">
-              <span className="legacy-year">1920s</span>
+              <span className="legacy-year">1960s</span>
               <h3>The Beginning</h3>
               <p>
-                More than a century ago, when commercial apple cultivation was still in its infancy in the hills of Jubbal, our forefathers recognized the region's potential and planted the first roots of what would become Dwarkadhish Orchards. Starting with a small plot of land and guided by determination, patience, and a deep connection to the mountains, they nurtured their orchards through changing seasons and generations. Their pioneering spirit helped establish apple farming in the area, laying the foundation for a thriving family enterprise that continues to flourish today.
+                Our father, Late Shri Krishan Lal Dhanta, laid the foundation of the orchard through his vision, hard work, and dedication to farming. What began as a modest apple orchard grew steadily under his stewardship into a thriving fruit growing enterprise. With a deep understanding of the Himalayan climate and a passion for quality cultivation, he devoted his life to nurturing healthy orchards and producing exceptional fruit.
+
+                Alongside our mother, Smt. Sumitra Dhanta, he worked tirelessly to expand the farm beyond apples to include pears and peaches, creating new opportunities while preserving the values of honesty, perseverance, and respect for the land. Together, they built not only a successful orchard but also a strong family legacy rooted in hard work and integrity.
+
+                Their guidance and example continue to inspire us today. The orchard stands as a tribute to their dedication, and the values they instilled remain at the heart of everything we do as we carry their vision forward for future generations.
+              </p>
+            </div>
+            <div className="legacy-item">
+              <span className="legacy-year">2010s</span>
+              <h3>Pankaj &amp; Manjeet Dhanta</h3>
+              <p>
+                Pankaj and Manjeet remain deeply grateful for the values instilled in them by their parents. Growing up in the orchards, they learned the importance of hard work, integrity, perseverance, and respect for nature. The lessons and guidance of Krishan Lal and Sumitra Dhanta continue to inspire every decision they make today.
+
+                In the mid 2010s, determined to build upon the strong foundation laid by their parents, Pankaj and Manjeet began expanding the family orchards. By combining traditional farming wisdom with modern horticultural practices, they introduced new fruit varieties, improved cultivation techniques, and enhanced the quality of their produce while preserving the values that had guided the orchard for decades.
+
+                Their commitment to continuous improvement and sustainable growth has helped strengthen the orchard's reputation for producing premium apples, pears, peaches, and other fruits. Today, they continue to honour their parents' legacy by balancing tradition with innovation and ensuring that the orchard thrives for future generations.
 
               </p>
             </div>
             <div className="legacy-item">
-              <span className="legacy-year">1960s</span>
-              <h3>Expansion</h3>
-              <p>
-                Our father, Late Shri Krishan Lal Dhanta, and our mother, Smt. Sumitra Dhanta, proudly carried forward the farming traditions passed down by their forefathers, dedicating their lives to nurturing and expanding the family orchards. Under their stewardship, the orchard grew beyond apples to include pears and peaches, enriching the harvest while preserving the traditional cultivation methods and deep respect for the land that had guided the family for generations. Their hard work, vision, and commitment laid the foundation upon which we continue to build today.
-              </p>
-            </div>
-            <div className="legacy-item">
               <span className="legacy-year">Today</span>
-              <h3>Pankaj &amp; Manjeet Dhanta</h3>
               <p>
-                Pankaj and Manjeet remain deeply grateful for the values instilled in them by their parents. From an early age, they witnessed the dedication, resilience, and hard work that Krishan Lal and Sumitra Dhanta poured into both their family and their orchards. Beyond teaching them the art of fruit cultivation, their parents taught them the importance of integrity, humility, respect for nature, and the value of caring for others. The love, guidance, and life lessons they received continue to inspire every decision they make, both in the orchards and in life.
+                Today, under the leadership of Pankaj and Manjeet Dhanta, the orchard blends generations of farming experience with modern horticultural practices to produce premium quality apples, pears, peaches, and other fruits. Committed to continuous learning, Pankaj has explored advanced fruit growing techniques from around the world, including modern orchard management systems observed during his visit to Hungary.
+
+                Inspired by these global best practices, the family has adopted high density plantation systems, improved rootstocks, scientific pruning methods, modern irrigation techniques, and sustainable orchard management practices. These innovations help improve fruit quality, tree health, and overall productivity while ensuring responsible use of natural resources.
+
+                While embracing innovation, the family remains firmly rooted in the values established by Late Shri Krishan Lal Dhanta and Smt. Sumitra Dhanta. By combining traditional farming wisdom with modern technology, Pankaj and Manjeet continue to cultivate exceptional fruit while preserving the beauty and sustainability of their Himalayan orchards for future generations.
 
               </p>
             </div>
@@ -107,12 +118,12 @@ function About() {
         <div className="container owners-grid">
           <div className="owner-card">
             <div className="owner-avatar">
-                <img src="Images/Pankaj.jpg" alt="Pankaj Dhanta" />
+              <img src="Images/Pankaj.jpg" alt="Pankaj Dhanta" />
             </div>
             <h3>Pankaj Dhanta</h3>
             <p className="owner-role">Co-Owner &amp; Orchard Steward</p>
             <p>
-           A seasoned horticulture expert and senior horticulture officer, Pankaj is widely recognized for his contributions to fruit cultivation in Himachal Pradesh. Through years of field experience, agricultural camps, and farmer advisory work, he continues to promote excellence in Himalayan horticulture while leading operations across our orchards.
+              A seasoned horticulture expert and senior horticulture officer, Pankaj is widely recognized for his contributions to fruit cultivation in Himachal Pradesh. Through years of field experience, agricultural camps, and farmer advisory work, he continues to promote excellence in Himalayan horticulture while leading operations across our orchards.
             </p>
           </div>
           <div className="owner-card">
